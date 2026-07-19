@@ -13,9 +13,7 @@ XIEXIE Inc. | When You Don't Know Where to Start, Start with XIEXIE
 </title>
 
 
-<meta name="description" content="
-XIEXIE Inc. helps people solve problems, find answers, and connect with the right resources. When you don't know where to start, start with XIEXIE.
-">
+<meta name="description" content="XIEXIE Inc. helps people solve problems, find answers, and connect with the right resources. When you don't know where to start, start with XIEXIE.">
 
 
 <meta name="keywords" content="
@@ -33,7 +31,32 @@ communication support
 <meta name="author" content="Shengzhe Wang, Founder of XIEXIE Inc.">
 
 
+<!-- Canonical -->
+
 <link rel="canonical" href="https://xiexieinc.com/">
+
+
+<!-- Language -->
+
+<link rel="alternate"
+hreflang="en"
+href="https://xiexieinc.com/">
+
+
+<link rel="alternate"
+hreflang="zh-CN"
+href="https://xiexieinc.com/cn/">
+
+
+<link rel="alternate"
+hreflang="x-default"
+href="https://xiexieinc.com/">
+
+
+
+<!-- Favicon -->
+
+<link rel="icon" href="logo.png">
 
 
 
@@ -41,15 +64,14 @@ communication support
 
 <meta property="og:site_name" content="XIEXIE Inc.">
 
-<meta property="og:title" content="
-XIEXIE Inc. | When You Don't Know Where to Start, Start with XIEXIE
-">
+<meta property="og:title" content="XIEXIE Inc. | When You Don't Know Where to Start, Start with XIEXIE">
 
-<meta property="og:description" content="
-XIEXIE helps people find answers, solve problems, and connect with resources.
-">
+
+<meta property="og:description" content="XIEXIE helps people find answers, solve problems, and connect with resources.">
+
 
 <meta property="og:type" content="website">
+
 
 <meta property="og:url" content="https://xiexieinc.com/">
 
@@ -57,48 +79,68 @@ XIEXIE helps people find answers, solve problems, and connect with resources.
 <meta property="og:image" content="https://xiexieinc.com/logo.png">
 
 
+<meta property="og:locale" content="en_US">
+
+
+
+
+<!-- Twitter Card -->
+
+<meta name="twitter:card" content="summary_large_image">
+
+<meta name="twitter:title" content="XIEXIE Inc. | When You Don't Know Where to Start, Start with XIEXIE">
+
+<meta name="twitter:description" content="XIEXIE helps people find answers, solve problems, and connect with resources.">
+
+<meta name="twitter:image" content="https://xiexieinc.com/logo.png">
+
+
+
 
 <!-- Organization Schema -->
+
 
 <script type="application/ld+json">
 
 {
- "@context":"https://schema.org",
- "@type":"Organization",
+"@context":"https://schema.org",
+"@type":"Organization",
 
- "name":"XIEXIE Inc.",
+"name":"XIEXIE Inc.",
 
- "url":"https://xiexieinc.com",
+"url":"https://xiexieinc.com/",
 
- "logo":"https://xiexieinc.com/logo.png",
-
- "description":
- "XIEXIE Inc. helps people find answers, solve problems, and connect with resources. When you don't know where to start, start with XIEXIE.",
+"logo":"https://xiexieinc.com/logo.png",
 
 
- "founder":{
-   "@type":"Person",
-   "name":"Shengzhe Wang"
- },
+"description":
+"XIEXIE Inc. helps people solve problems, find answers, and connect with the right resources. When you don't know where to start, start with XIEXIE.",
 
 
- "email":
- "xiexieinc@outlook.com",
+"founder":
+{
+"@type":"Person",
+"name":"Shengzhe Wang"
+},
 
 
- "sameAs":[
+"email":
+"xiexieinc@outlook.com",
 
- "https://www.linkedin.com/company/xiexie/",
 
- "https://github.com/XIEXIEInc",
+"sameAs":[
 
- "https://www.youtube.com/@XIEXIEInc",
+"https://www.linkedin.com/company/xiexie/",
 
- "https://www.facebook.com/xiexieinc",
+"https://github.com/XIEXIEInc",
 
- "https://instagram.com/xiexie.inc"
+"https://www.youtube.com/@XIEXIEInc",
 
- ]
+"https://www.facebook.com/xiexieinc",
+
+"https://instagram.com/xiexie.inc"
+
+]
 
 }
 
@@ -114,6 +156,7 @@ XIEXIE helps people find answers, solve problems, and connect with resources.
 margin:0;
 padding:0;
 box-sizing:border-box;
+
 font-family:
 Arial,
 Helvetica,
@@ -126,7 +169,10 @@ sans-serif;
 body{
 
 color:#222;
+
 line-height:1.7;
+
+background:white;
 
 }
 
@@ -143,7 +189,7 @@ justify-content:space-between;
 
 align-items:center;
 
-padding:20px 8%;
+padding:25px 8%;
 
 background:white;
 
@@ -157,11 +203,14 @@ z-index:10;
 
 
 
+
 .logo{
 
 display:flex;
 
 align-items:center;
+
+gap:12px;
 
 font-size:30px;
 
@@ -173,21 +222,18 @@ letter-spacing:3px;
 
 
 
+
 .logo img{
 
 width:45px;
 
 height:45px;
 
-margin-right:15px;
-
 object-fit:contain;
 
 }
 
-
-
-/* Hero */
+ /* Hero */
 
 
 .hero{
@@ -228,215 +274,25 @@ padding:50px 10%;
 .hero h1{
 
 
-font-size:60px;
-
-color:white;
-
-text-shadow:
-0 3px 10px rgba(0,0,0,0.8);
-
-}
-
-
-
-
-.hero h2{
-
-
-font-size:35px;
-
-font-weight:normal;
-
-margin:25px 0;
-
-color:white;
-
-text-shadow:
-0 3px 10px rgba(0,0,0,0.8);
-
-
-}
-
-
-
-.hero p{
-
-
-font-size:22px;
-
-color:white;
-
-margin-top:20px;
-
-}
-
-
-
-.btn{
-
-
-display:inline-block;
-
-margin-top:35px;
-
-padding:15px 35px;
-
-background:#222;
-
-color:white;
-
-border-radius:40px;
-
-text-decoration:none;
-
-}
-
-
-
-section{
-
-padding:90px 10%;
-
-}
-
-
-.title{
-
-text-align:center;
-
-font-size:40px;
-
-margin-bottom:45px;
-
-}
-
- <style>
-
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:
-Arial,
-Helvetica,
-sans-serif;
-}
-
-
-body{
-
-color:#222;
-
-line-height:1.7;
-
-background:white;
-
-}
-
-
-/* Navigation */
-
-nav{
-
-display:flex;
-
-justify-content:space-between;
-
-align-items:center;
-
-padding:25px 8%;
-
-background:white;
-
-position:sticky;
-
-top:0;
-
-z-index:10;
-
-}
-
-
-.logo{
-
-display:flex;
-
-align-items:center;
-
-gap:12px;
-
-font-size:30px;
-
-font-weight:bold;
-
-letter-spacing:3px;
-
-}
-
-
-.logo img{
-
-width:45px;
-
-height:45px;
-
-object-fit:contain;
-
-}
-
-
-
-/* Hero */
-
-.hero{
-
-
-min-height:90vh;
-
-
-background:
-
-linear-gradient(
-rgba(0,0,0,0.45),
-rgba(0,0,0,0.45)
-),
-
-url("hero.jpg") center/cover no-repeat;
-
-
-display:flex;
-
-justify-content:center;
-
-align-items:center;
-
-
-text-align:center;
-
-
-padding:50px 10%;
-
-
-}
-
-
-
-.hero h1{
-
 font-size:65px;
 
 color:white;
 
 font-weight:700;
 
+
 text-shadow:
+
 0 3px 10px rgba(0,0,0,0.8);
+
 
 }
 
 
 
+
 .hero h2{
+
 
 font-size:32px;
 
@@ -448,10 +304,15 @@ color:white;
 
 max-width:900px;
 
+
 text-shadow:
+
 0 3px 10px rgba(0,0,0,0.8);
 
+
 }
+
+
 
 
 
@@ -460,32 +321,24 @@ text-shadow:
 
 display:inline-block;
 
-
 margin-top:35px;
-
 
 padding:15px 40px;
 
-
 background:white;
-
 
 color:#222;
 
-
 border-radius:40px;
-
 
 text-decoration:none;
 
-
 font-weight:bold;
-
 
 transition:0.3s;
 
-
 }
+
 
 
 .btn:hover{
@@ -519,56 +372,79 @@ margin-bottom:45px;
 
 
 
+
 /* Cards */
 
 
 .cards{
 
+
 display:grid;
 
+
 grid-template-columns:
+
 repeat(auto-fit,minmax(250px,1fr));
+
 
 gap:30px;
 
+
 }
+
 
 
 
 .card{
 
+
 background:#fafafa;
+
 
 padding:35px;
 
+
 border-radius:20px;
 
+
 box-shadow:
+
 0 5px 20px rgba(0,0,0,0.05);
 
+
 }
+
 
 
 
 .card h3{
 
+
 margin-bottom:15px;
 
+
 font-size:22px;
+
 
 }
 
 
 
-/* Mission */
+
+/* Dark Mission */
+
 
 .dark{
 
+
 background:#222;
+
 
 color:white;
 
+
 text-align:center;
+
 
 }
 
@@ -582,68 +458,30 @@ font-size:40px;
 
 
 
+
+
 /* Contact */
 
 
 .contact{
 
+
 background:#f7f3ea;
+
 
 text-align:center;
 
+
 }
+
 
 
 
 .contact p{
 
+
 font-size:22px;
 
-}
-
-
-
-/* Footer */
-
-
-footer{
-
-background:#f7f3ea;
-
-text-align:center;
-
-padding:50px 10%;
-
-}
-
-
-footer h3{
-
-font-size:30px;
-
-margin-bottom:15px;
-
-}
-
-
-.social-links{
-
-margin-top:30px;
-
-}
-
-
-.social-links a{
-
-display:inline-block;
-
-margin:8px 15px;
-
-color:#222;
-
-text-decoration:none;
-
-font-weight:bold;
 
 }
 
@@ -680,29 +518,46 @@ font-size:22px;
 
 
 
+
+
+
 </style>
 
- <body>
+
+</head>
+
+
+<body>
+
+
 
 
 <!-- Navigation -->
 
+
 <nav>
+
 
 <div class="logo">
 
+
 <img src="logo.png" alt="XIEXIE Inc. Logo">
+
 
 XIEXIE
 
+
 </div>
+
 
 </nav>
 
 
 
 
+
 <!-- HERO -->
+
 
 <section class="hero">
 
@@ -711,22 +566,33 @@ XIEXIE
 
 
 <h1>
+
 XIEXIE Inc.
+
 </h1>
+
 
 
 <h2>
 
+
 When You Don't Know Where to Start,
+
 <br>
+
 Start with XIEXIE.
+
 
 </h2>
 
 
+
+
 <a class="btn" href="mailto:xiexieinc@outlook.com">
 
+
 Tell Us Your Problem
+
 
 </a>
 
@@ -750,9 +616,12 @@ Tell Us Your Problem
 
 <h2 class="title">
 
+
 About XIEXIE Inc.
 
+
 </h2>
+
 
 
 
@@ -767,13 +636,17 @@ margin:auto;
 XIEXIE Inc. helps people solve problems, find answers, and connect with the right resources.
 
 
+
 <br><br>
+
 
 
 Everyone faces moments when they do not know what to do next.
 
 
+
 <br><br>
+
 
 
 XIEXIE exists to help people find the right direction, the right information, and the right connections.
@@ -798,26 +671,39 @@ XIEXIE exists to help people find the right direction, the right information, an
 
 <h2 class="title">
 
+
 Our Mission
 
+
 </h2>
+
+
 
 
 <h2>
 
+
 Our success is when you no longer need us.
 
+
 </h2>
+
+
 
 
 <br>
 
 
+
+
 <p style="font-size:22px;">
+
 
 We believe helping people means creating solutions that allow them to move forward independently.
 
+
 </p>
+
 
 
 </section>
@@ -836,9 +722,12 @@ We believe helping people means creating solutions that allow them to move forwa
 
 <h2 class="title">
 
+
 What We Help With
 
+
 </h2>
+
 
 
 
@@ -848,68 +737,100 @@ What We Help With
 
 <div class="card">
 
+
 <h3>
+
 🌎 New Beginnings
+
 </h3>
 
+
 <p>
+
 
 Moving to a new country, city, or starting a new chapter.
 
+
 </p>
+
 
 </div>
 
 
 
 
+
 <div class="card">
 
+
 <h3>
+
 📄 Complex Problems
+
 </h3>
 
+
 <p>
+
 
 Documents, applications, processes, and situations that are difficult to understand.
 
+
 </p>
+
 
 </div>
 
 
 
 
+
 <div class="card">
 
+
 <h3>
+
 🗣 Communication
+
 </h3>
 
+
 <p>
+
 
 Language barriers, cultural differences, and finding the right connections.
 
+
 </p>
 
+
 </div>
+
 
 
 
 
 <div class="card">
 
+
 <h3>
+
 🤝 Resource Connection
+
 </h3>
+
 
 <p>
 
+
 Connecting people with information, organizations, and opportunities.
+
 
 </p>
 
+
 </div>
+
 
 
 
@@ -932,9 +853,12 @@ Connecting people with information, organizations, and opportunities.
 
 <h2 class="title">
 
+
 Our Philosophy
 
+
 </h2>
+
 
 
 <p style="
@@ -945,10 +869,15 @@ font-weight:bold;
 
 
 One Problem.
+
 <br>
+
 One Solution.
+
 <br>
+
 One Thank You.
+
 
 </p>
 
@@ -969,59 +898,87 @@ One Thank You.
 
 <h2 class="title">
 
+
 Join XIEXIE
 
+
 </h2>
+
 
 
 
 <div class="cards">
 
 
+
 <div class="card">
 
+
 <h3>
+
 Volunteer
+
 </h3>
 
+
 <p>
+
 
 Share your skills and help others solve problems.
 
+
 </p>
+
 
 </div>
 
 
 
+
+
 <div class="card">
 
+
 <h3>
+
 Partner
+
 </h3>
 
+
 <p>
+
 
 Connect your resources with people who need them.
 
+
 </p>
+
 
 </div>
 
 
 
 
+
 <div class="card">
 
+
 <h3>
+
 Support
+
 </h3>
+
 
 <p>
 
+
 Help build a global network of solutions.
 
+
 </p>
+
 
 </div>
 
@@ -1032,13 +989,7 @@ Help build a global network of solutions.
 
 </section>
 
-
-
-
-
-
-
-<!-- CONTACT -->
+ <!-- CONTACT -->
 
 
 <section class="contact">
@@ -1046,26 +997,39 @@ Help build a global network of solutions.
 
 <h2 class="title">
 
+
 Need Help?
+
 
 </h2>
 
 
 
+
 <p>
 
+
 When you don't know where to start,
+
+<br>
+
 start with XIEXIE.
+
 
 </p>
 
 
 
+
+
 <a class="btn" href="mailto:xiexieinc@outlook.com">
+
 
 Contact XIEXIE
 
+
 </a>
+
 
 
 </section>
@@ -1082,23 +1046,39 @@ Contact XIEXIE
 <footer>
 
 
+
 <h3>
+
 XIEXIE Inc.
+
 </h3>
 
 
+
+
+
 <p>
+
 
 Founder: Shengzhe Wang
 
+
 </p>
+
+
+
 
 
 <p>
 
+
 ✉ xiexieinc@outlook.com
 
+
 </p>
+
+
+
 
 
 
@@ -1106,49 +1086,88 @@ Founder: Shengzhe Wang
 <div class="social-links">
 
 
+
+
+
 <h4>
+
+
 Follow XIEXIE Inc.
+
+
 </h4>
+
+
+
+
 
 
 
 <a href="https://www.linkedin.com/company/xiexie/" target="_blank">
 
+
 LinkedIn
 
+
 </a>
+
+
+
+
 
 
 
 <a href="https://github.com/XIEXIEInc" target="_blank">
 
+
 GitHub
 
+
 </a>
+
+
+
+
 
 
 
 <a href="https://www.youtube.com/@XIEXIEInc" target="_blank">
 
+
 YouTube
 
+
 </a>
+
+
+
+
 
 
 
 <a href="https://www.facebook.com/xiexieinc" target="_blank">
 
+
 Facebook
 
+
 </a>
+
+
+
+
 
 
 
 <a href="https://instagram.com/xiexie.inc" target="_blank">
 
+
 Instagram
 
+
 </a>
+
+
 
 
 
@@ -1156,21 +1175,39 @@ Instagram
 
 
 
+
+
+
+
 <br>
+
+
+
+
 
 
 
 <p>
 
+
 © 2026 XIEXIE Inc. All Rights Reserved.
 
+
 </p>
+
+
+
 
 
 </footer>
 
 
 
+
+
+
+
 </body>
+
 
 </html>
