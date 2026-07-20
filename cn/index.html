@@ -94,14 +94,10 @@ xiexieinc,
 <meta property="og:image" content="https://xiexieinc.com/logo.png">
 
 
-<meta property="og:locale" content="zh_CN">
+<meta property="og.locale" content="zh_CN">
 
 
 
-
-
-
-<!-- Twitter -->
 
 
 <meta name="twitter:card" content="summary_large_image">
@@ -182,11 +178,6 @@ xiexieinc,
 <style>
 
 
-/* =========================
-   Global
-========================= */
-
-
 *{
 
 margin:0;
@@ -231,9 +222,8 @@ transition:0.3s;
 
 
 
-/* =========================
-   Navigation
-========================= */
+
+/* Navigation */
 
 
 nav{
@@ -263,6 +253,7 @@ box-shadow:
 
 
 
+
 .logo{
 
 display:flex;
@@ -282,6 +273,7 @@ letter-spacing:3px;
 
 
 
+
 .logo img{
 
 width:45px;
@@ -291,7 +283,6 @@ height:45px;
 object-fit:contain;
 
 }
-
 
 
 
@@ -322,9 +313,7 @@ color:#6D28D9;
 
 
 
-/* =========================
-Hero
-========================= */
+/* Hero */
 
 
 .hero{
@@ -345,7 +334,7 @@ rgba(0,0,0,0.45)
 ),
 
 
-url("../hero.jpg")
+url("../hero2.jpg")
 
 center/cover no-repeat;
 
@@ -461,9 +450,7 @@ transform:translateY(-3px);
 
 
 
-/* =========================
-Sections
-========================= */
+/* Sections */
 
 
 section{
@@ -492,9 +479,38 @@ font-weight:700;
 
 
 
-/* =========================
-Cards
-========================= */
+/* Images */
+
+
+.content-image{
+
+
+display:block;
+
+
+width:100%;
+
+
+max-width:900px;
+
+
+margin:50px auto 0;
+
+
+border-radius:25px;
+
+
+object-fit:cover;
+
+
+}
+
+
+
+
+
+
+/* Cards */
 
 
 .cards{
@@ -586,9 +602,7 @@ color:#444;
 
 
 
-/* =========================
-Mission
-========================= */
+/* Mission */
 
 
 .dark{
@@ -616,9 +630,8 @@ font-size:40px;
 
 
 
-/* =========================
-Contact
-========================= */
+
+/* Contact */
 
 
 .contact{
@@ -646,9 +659,7 @@ color:#6D28D9;
 
 
 
-/* =========================
-Mobile
-========================= */
+/* Mobile */
 
 
 @media(max-width:700px){
@@ -679,9 +690,10 @@ font-size:22px;
 
 }
 
+
 </style>
 
-<body>
+   <body>
 
 
 
@@ -736,6 +748,7 @@ EN
 
 
 
+
 <!-- HERO -->
 
 
@@ -762,9 +775,11 @@ EN
 
 <br>
 
+
 找到方向 连接可能.
 
 </h2>
+
 
 
 
@@ -823,14 +838,13 @@ margin:auto;
 需要一次帮助 一次连接.
 
 
-
 <br><br>
 
 
 谢谢你.com 从小事开始.
 
-<br>
 
+<br>
 
 
 让帮助发生 让感谢延续.
@@ -840,12 +854,19 @@ margin:auto;
 
 
 
+
+
+<img 
+src="../hero.jpg"
+alt="谢谢你 XIEXIE Inc."
+class="content-image"
+>
+
+
+
 </section>
 
-
-
-
-
+      
 
 
 
@@ -891,9 +912,9 @@ margin:auto;
 ">
 
 
-我们相信 真正的帮助不是让人依赖
+我们相信，真正的帮助不是让人依赖，
 
-而是创造能够帮助人独立前进的解决方案.
+而是创造能够帮助人独立前进的解决方案。
 
 
 </p>
@@ -1088,6 +1109,14 @@ color:white;
 
 </section>
 
+
+
+
+
+
+
+
+
 <!-- PHILOSOPHY -->
 
 
@@ -1114,13 +1143,13 @@ margin:auto;
 ">
 
 
-每一个问题 都值得被认真对待.
+每一个问题，都值得被认真对待.
 
 
 <br><br>
 
 
-我们寻找解决方案
+我们寻找解决方案，
 
 连接人与资源.
 
@@ -1128,7 +1157,7 @@ margin:auto;
 <br><br>
 
 
-让一次帮助
+让一次帮助，
 
 最终成为一句真诚的谢谢你.
 
@@ -1138,12 +1167,18 @@ margin:auto;
 
 
 
+
+<img 
+src="../hero3.jpg"
+alt="谢谢你 XIEXIE Inc. 理念"
+class="content-image"
+>
+
+
+
 </section>
 
-
-
-
-
+      
 
 
 
@@ -1175,25 +1210,42 @@ font-size:22px;
 margin-bottom:35px;
 ">
 
+
 不知道下一步怎么办？
 
 <br>
 
 联系我们，
+
 一起找到方向。
+
 
 </p>
 
 
+
+
 <a href="mailto:xiexieinc@outlook.com"
+
 style="
+
 display:inline-block;
+
 background:#6D28D9;
+
 color:white;
+
 padding:15px 40px;
+
 border-radius:40px;
+
 text-decoration:none;
+
 font-weight:bold;
+
+box-shadow:
+0 8px 20px rgba(109,40,217,0.35);
+
 ">
 
 联系谢谢你.com
@@ -1201,7 +1253,12 @@ font-weight:bold;
 </a>
 
 
+
 </section>
+
+
+
+
 
 
 
@@ -1211,10 +1268,15 @@ font-weight:bold;
 
 
 <footer style="
+
 background:#111;
+
 color:white;
+
 text-align:center;
+
 padding:70px 20px;
+
 ">
 
 
@@ -1222,10 +1284,15 @@ padding:70px 20px;
 
 
 <h3 style="
+
 font-size:32px;
+
 letter-spacing:3px;
+
 margin-bottom:20px;
+
 ">
+
 
 XIEXIE Inc.
 
@@ -1235,12 +1302,18 @@ XIEXIE Inc.
 
 
 
+
 <p style="
+
 font-size:18px;
+
 margin-bottom:10px;
+
 ">
 
+
 创始人：王晟哲
+
 
 </p>
 
@@ -1251,14 +1324,58 @@ margin-bottom:10px;
 
 
 
-
 <p style="
-font-size:14px;
-opacity:0.7;
-margin-top:45px;
+
+font-size:16px;
+
+margin-top:25px;
+
+opacity:0.8;
+
 ">
 
+
+联系我们：
+
+<br>
+
+<a href="mailto:xiexieinc@outlook.com"
+
+style="
+
+color:white;
+
+text-decoration:none;
+
+">
+
+xiexieinc@outlook.com
+
+</a>
+
+
+</p>
+
+
+
+
+
+
+
+
+<p style="
+
+font-size:14px;
+
+opacity:0.7;
+
+margin-top:45px;
+
+">
+
+
 © 2026 XIEXIE Inc. All Rights Reserved.
+
 
 </p>
 
@@ -1267,6 +1384,58 @@ margin-top:45px;
 
 
 </footer>
+
+
+
+
+
+
+
+<!-- BACK TO TOP -->
+
+
+<a href="#"
+
+style="
+
+position:fixed;
+
+right:25px;
+
+bottom:25px;
+
+width:45px;
+
+height:45px;
+
+background:#6D28D9;
+
+color:white;
+
+border-radius:50%;
+
+display:flex;
+
+align-items:center;
+
+justify-content:center;
+
+text-decoration:none;
+
+font-size:22px;
+
+font-weight:bold;
+
+">
+
+
+↑
+
+
+</a>
+
+
+
 
 
 
@@ -1276,119 +1445,3 @@ margin-top:45px;
 
 
 </html>
-
-<!-- CONTACT CTA -->
-
-
-<section style="
-background:#F7F3EA;
-color:#111;
-text-align:center;
-padding:90px 10%;
-">
-
-
-<h2 style="
-font-size:40px;
-margin-bottom:20px;
-">
-
-需要帮助？
-
-</h2>
-
-
-
-<p style="
-font-size:22px;
-margin-bottom:35px;
-">
-
-无论是一个问题，
-还是一个不知道从哪里开始的想法。
-
-</p>
-
-
-<a href="mailto:xiexieinc@outlook.com"
-style="
-display:inline-block;
-background:#6D28D9;
-color:white;
-padding:15px 40px;
-border-radius:40px;
-text-decoration:none;
-font-weight:bold;
-">
-
-联系谢谢你.com
-
-</a>
-
-
-</section>
-
-
-
-
-
-<!-- FOOTER -->
-
-
-<footer style="
-background:#111;
-color:white;
-text-align:center;
-padding:70px 20px;
-">
-
-
-
-
-
-<h3 style="
-font-size:32px;
-letter-spacing:3px;
-margin-bottom:20px;
-">
-
-XIEXIE Inc.
-
-</h3>
-
-
-
-
-
-<p style="
-font-size:18px;
-margin-bottom:10px;
-">
-
-创始人：王晟哲
-
-</p>
-
-
-
-
-
-
-
-
-
-<p style="
-font-size:14px;
-opacity:0.7;
-margin-top:45px;
-">
-
-© 2026 XIEXIE Inc. All Rights Reserved.
-
-</p>
-
-
-
-
-
-</footer>
