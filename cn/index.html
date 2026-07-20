@@ -1,6 +1,3 @@
-<!DOCTYPE html>
-<html lang="zh-CN">
-
 <head>
 
 
@@ -48,38 +45,16 @@ xiexieinc,
 
 
 
+<!-- Language SEO -->
 
-<!-- Canonical -->
 
 <link rel="alternate" hreflang="en" href="https://xiexieinc.com/">
+
+
 <link rel="alternate" hreflang="zh-CN" href="https://xiexieinc.com/cn/">
+
+
 <link rel="alternate" hreflang="x-default" href="https://xiexieinc.com/">
-
-
-
-
-
-<!-- Language -->
-
-
-<link rel="alternate"
-hreflang="en"
-href="https://xiexieinc.com/">
-
-
-
-<link rel="alternate"
-hreflang="zh-CN"
-href="https://xiexieinc.com/cn/">
-
-
-
-<link rel="alternate"
-hreflang="x-default"
-href="https://xiexieinc.com/">
-
-
-
 
 
 
@@ -89,8 +64,6 @@ href="https://xiexieinc.com/">
 
 
 <link rel="icon" href="../logo.png">
-
-
 
 
 
@@ -107,23 +80,18 @@ href="https://xiexieinc.com/">
 ">
 
 
-
 <meta property="og:description" content="
 谢谢你帮助人们解决问题、寻找答案，并连接正确的资源。
 ">
 
 
-
 <meta property="og:type" content="website">
-
 
 
 <meta property="og:url" content="https://xiexieinc.com/cn/">
 
 
-
 <meta property="og:image" content="https://xiexieinc.com/logo.png">
-
 
 
 <meta property="og:locale" content="zh_CN">
@@ -133,7 +101,7 @@ href="https://xiexieinc.com/">
 
 
 
-<!-- Twitter Card -->
+<!-- Twitter -->
 
 
 <meta name="twitter:card" content="summary_large_image">
@@ -156,8 +124,6 @@ href="https://xiexieinc.com/">
 
 
 
-
-
 <!-- Organization Schema -->
 
 
@@ -169,59 +135,39 @@ href="https://xiexieinc.com/">
 
 "@type":"Organization",
 
-
 "name":"谢谢你 XIEXIE Inc.",
-
-
 
 "url":"https://xiexieinc.com/cn/",
 
-
-
 "logo":"https://xiexieinc.com/logo.png",
-
-
 
 "description":
 "谢谢你帮助人们解决问题、寻找答案，并连接正确的资源。当你不知道从哪里开始，就从谢谢你开始。",
 
 
-
 "founder":
 
 {
-
 "@type":"Person",
-
 "name":"Shengzhe Wang"
-
 },
 
 
-
 "email":
-
 "xiexieinc@outlook.com",
-
 
 
 "sameAs":[
 
-
 "https://www.linkedin.com/company/xiexie/",
-
 
 "https://github.com/XIEXIEInc",
 
-
 "https://www.youtube.com/@XIEXIEInc",
-
 
 "https://www.facebook.com/xiexieinc",
 
-
 "https://instagram.com/xiexie.inc"
-
 
 ]
 
@@ -236,6 +182,10 @@ href="https://xiexieinc.com/">
 <style>
 
 
+/* =========================
+   Global
+========================= */
+
 
 *{
 
@@ -244,7 +194,6 @@ margin:0;
 padding:0;
 
 box-sizing:border-box;
-
 
 font-family:
 
@@ -256,88 +205,77 @@ Helvetica,
 
 sans-serif;
 
-
 }
-
-
 
 
 
 body{
 
-
 color:#222;
 
-
-line-height:1.7;
-
+line-height:1.8;
 
 background:white;
-
 
 }
 
 
 
 
+a{
+
+transition:0.3s;
+
+}
 
 
-/* Navigation */
+
+
+/* =========================
+   Navigation
+========================= */
 
 
 nav{
 
-
 display:flex;
-
 
 justify-content:space-between;
 
-
 align-items:center;
 
-
-padding:25px 8%;
-
+padding:22px 8%;
 
 background:white;
 
-
 position:sticky;
-
 
 top:0;
 
+z-index:100;
 
-z-index:10;
+box-shadow:
 
+0 2px 15px rgba(0,0,0,0.06);
 
 }
-
 
 
 
 
 .logo{
 
-
 display:flex;
-
 
 align-items:center;
 
-
 gap:12px;
-
 
 font-size:30px;
 
-
 font-weight:bold;
 
-
 letter-spacing:3px;
-
 
 }
 
@@ -346,19 +284,47 @@ letter-spacing:3px;
 
 .logo img{
 
-
 width:45px;
-
 
 height:45px;
 
-
 object-fit:contain;
-
 
 }
 
- /* Hero */
+
+
+
+
+
+.language-switch a{
+
+color:#111;
+
+text-decoration:none;
+
+font-weight:bold;
+
+margin:0 5px;
+
+}
+
+
+
+.language-switch a:hover{
+
+color:#6D28D9;
+
+}
+
+
+
+
+
+
+/* =========================
+Hero
+========================= */
 
 
 .hero{
@@ -369,20 +335,25 @@ min-height:90vh;
 
 background:
 
+
 linear-gradient(
+
 rgba(0,0,0,0.45),
+
 rgba(0,0,0,0.45)
+
 ),
 
+
 url("../hero.jpg")
+
 center/cover no-repeat;
+
 
 
 display:flex;
 
-
 justify-content:center;
-
 
 align-items:center;
 
@@ -400,53 +371,41 @@ padding:50px 10%;
 
 .hero h1{
 
-
 font-size:65px;
 
-
 color:white;
-
 
 font-weight:700;
 
 
-
 text-shadow:
 
-0 3px 10px rgba(0,0,0,0.8);
-
+0 3px 12px rgba(0,0,0,0.8);
 
 }
-
 
 
 
 
 .hero h2{
 
-
 font-size:32px;
-
 
 font-weight:normal;
 
-
 margin:25px 0;
 
-
 color:white;
-
 
 max-width:900px;
 
 
-
 text-shadow:
 
-0 3px 10px rgba(0,0,0,0.8);
-
+0 3px 12px rgba(0,0,0,0.8);
 
 }
+
 
 
 
@@ -460,13 +419,13 @@ display:inline-block;
 margin-top:35px;
 
 
-padding:15px 40px;
+padding:15px 42px;
 
 
-background:white;
+background:#6D28D9;
 
 
-color:#222;
+color:white;
 
 
 border-radius:40px;
@@ -478,7 +437,9 @@ text-decoration:none;
 font-weight:bold;
 
 
-transition:0.3s;
+box-shadow:
+
+0 8px 20px rgba(109,40,217,0.35);
 
 
 }
@@ -486,6 +447,9 @@ transition:0.3s;
 
 
 .btn:hover{
+
+
+background:#5B21B6;
 
 
 transform:translateY(-3px);
@@ -497,31 +461,29 @@ transform:translateY(-3px);
 
 
 
-
-/* Sections */
+/* =========================
+Sections
+========================= */
 
 
 section{
 
-
 padding:90px 10%;
 
-
 }
+
 
 
 
 .title{
 
-
 text-align:center;
-
 
 font-size:42px;
 
-
 margin-bottom:45px;
 
+font-weight:700;
 
 }
 
@@ -530,7 +492,9 @@ margin-bottom:45px;
 
 
 
-/* Cards */
+/* =========================
+Cards
+========================= */
 
 
 .cards{
@@ -552,10 +516,11 @@ gap:30px;
 
 
 
+
 .card{
 
 
-background:#fafafa;
+background:white;
 
 
 padding:35px;
@@ -564,9 +529,31 @@ padding:35px;
 border-radius:20px;
 
 
+border:
+
+1px solid #eee;
+
+
 box-shadow:
 
-0 5px 20px rgba(0,0,0,0.05);
+
+0 8px 25px rgba(0,0,0,0.06);
+
+
+transition:0.3s;
+
+
+}
+
+
+
+.card:hover{
+
+
+transform:translateY(-5px);
+
+
+border-color:#6D28D9;
 
 
 }
@@ -579,9 +566,9 @@ box-shadow:
 
 margin-bottom:15px;
 
-
 font-size:22px;
 
+color:#6D28D9;
 
 }
 
@@ -589,14 +576,25 @@ font-size:22px;
 
 
 
+.card p{
 
-/* Mission */
+color:#444;
+
+}
+
+
+
+
+
+/* =========================
+Mission
+========================= */
 
 
 .dark{
 
 
-background:#222;
+background:#111;
 
 
 color:white;
@@ -609,26 +607,24 @@ text-align:center;
 
 
 
-
 .dark h2{
 
-
 font-size:40px;
-
 
 }
 
 
 
 
-
-/* Contact */
+/* =========================
+Contact
+========================= */
 
 
 .contact{
 
 
-background:#f7f3ea;
+background:#F7F3EA;
 
 
 text-align:center;
@@ -639,13 +635,10 @@ text-align:center;
 
 
 
+.contact a{
 
 
-.contact p{
-
-
-font-size:22px;
-
+color:#6D28D9;
 
 }
 
@@ -653,18 +646,17 @@ font-size:22px;
 
 
 
-/* Mobile */
+/* =========================
+Mobile
+========================= */
 
 
 @media(max-width:700px){
 
 
-
 .hero h1{
 
-
 font-size:40px;
-
 
 }
 
@@ -672,9 +664,7 @@ font-size:40px;
 
 .hero h2{
 
-
 font-size:24px;
-
 
 }
 
@@ -682,62 +672,65 @@ font-size:24px;
 
 .logo{
 
-
 font-size:22px;
 
-
 }
 
 
-
 }
-
-
 
 </style>
-
-
-</head>
-
-
-
-
 
 <body>
 
 
 
 
-
 <!-- Navigation -->
+
 
 <nav>
 
+
 <div class="logo">
+
 
 <img src="../logo.png" alt="XIEXIE Inc. Logo">
 
+
 XIEXIE
+
 
 </div>
 
 
+
+
+
 <div class="language-switch">
 
-<a href="https://xiexieinc.com" class="active" style="color:#000; text-decoration:none;">
+
+<a href="https://xiexieinc.com/">
 EN
 </a>
 
-<span style="color:#000;">|</span>
 
-<a href="https://xiexieinc.com/cn/" style="color:#000; text-decoration:none;">
+<span>
+|
+</span>
+
+
+<a href="https://xiexieinc.com/cn/">
 中文
 </a>
+
 
 </div>
 
 
 </nav>
+
+
 
 
 
@@ -749,20 +742,14 @@ EN
 <section class="hero">
 
 
-
 <div>
-
-
 
 
 <h1>
 
-
-谢谢你
-
+谢谢你.com
 
 </h1>
-
 
 
 
@@ -770,28 +757,23 @@ EN
 <h2>
 
 
-当你不知道从哪里开始，
+从一个小小的帮助开始
+
 
 <br>
 
-就从谢谢你开始。
-
+找到方向 连接可能.
 
 </h2>
 
 
 
 
-
-
 <a class="btn" href="mailto:xiexieinc@outlook.com">
 
-
-告诉我们你的问题
-
+一起开始
 
 </a>
-
 
 
 
@@ -814,16 +796,11 @@ EN
 <section>
 
 
-
 <h2 class="title">
 
-
-关于谢谢你
-
+关于谢谢你.com
 
 </h2>
-
-
 
 
 
@@ -837,24 +814,26 @@ margin:auto;
 ">
 
 
-
-谢谢你（XIEXIE Inc.）帮助人们解决问题、寻找答案，并连接正确的资源。
-
+每个人都会经历迷茫的时刻
 
 
-<br><br>
+<br>
 
 
-
-每个人都会遇到不知道下一步该怎么办的时候。
+需要一次帮助 一次连接.
 
 
 
 <br><br>
 
 
+谢谢你.com 从小事开始.
 
-谢谢你的存在，是帮助人们找到正确的方向、正确的信息，以及正确的连接。
+<br>
+
+
+
+让帮助发生 让感谢延续.
 
 
 </p>
@@ -877,15 +856,11 @@ margin:auto;
 <section class="dark">
 
 
-
 <h2 class="title">
-
 
 我们的使命
 
-
 </h2>
-
 
 
 
@@ -893,34 +868,35 @@ margin:auto;
 <h2>
 
 
-当你不再需要我们时，
+当你不再需要我们时
 
 <br>
 
-就是我们的成功。
-
+就是我们的成功.
 
 </h2>
 
 
 
 
-
-<br>
-
+<br><br>
 
 
 
 
-<p style="font-size:22px;">
+<p style="
+font-size:22px;
+max-width:900px;
+margin:auto;
+">
 
 
-我们相信，真正的帮助不是让人依赖，而是创造能够帮助人独立前进的解决方案。
+我们相信 真正的帮助不是让人依赖
+
+而是创造能够帮助人独立前进的解决方案.
 
 
 </p>
-
-
 
 
 
@@ -937,20 +913,16 @@ margin:auto;
 <!-- SERVICES -->
 
 
-<section>
-
+<section style="
+background:#F7F3EA;
+">
 
 
 <h2 class="title">
 
-
 我们帮助解决什么
 
-
 </h2>
-
-
-
 
 
 
@@ -961,24 +933,30 @@ margin:auto;
 
 
 
-<div class="card">
+<div class="card"
+style="
+background:#111;
+color:white;
+">
 
 
-<h3>
-
+<h3 style="
+color:white;
+">
 
 🌎 新的开始
 
-
 </h3>
 
 
 
-<p>
+<p style="
+color:white;
+">
 
+移居新的国家、城市，
 
-移居新的国家、城市，或者开始人生新的阶段。
-
+或者开始人生新的阶段。
 
 </p>
 
@@ -993,24 +971,30 @@ margin:auto;
 
 
 
-<div class="card">
+<div class="card"
+style="
+background:#111;
+color:white;
+">
 
 
-<h3>
-
+<h3 style="
+color:white;
+">
 
 📄 复杂问题
 
-
 </h3>
 
 
 
-<p>
+<p style="
+color:white;
+">
 
+文件、申请、流程，
 
-文件、申请、流程，以及难以理解的问题。
-
+以及难以理解的问题。
 
 </p>
 
@@ -1025,24 +1009,30 @@ margin:auto;
 
 
 
-<div class="card">
+<div class="card"
+style="
+background:#111;
+color:white;
+">
 
 
-<h3>
-
+<h3 style="
+color:white;
+">
 
 🗣 沟通连接
 
-
 </h3>
 
 
 
-<p>
+<p style="
+color:white;
+">
 
+语言障碍、文化差异，
 
-语言障碍、文化差异，以及寻找正确的人和资源。
-
+以及寻找正确的人和资源。
 
 </p>
 
@@ -1057,24 +1047,30 @@ margin:auto;
 
 
 
-<div class="card">
+<div class="card"
+style="
+background:#111;
+color:white;
+">
 
 
-<h3>
-
+<h3 style="
+color:white;
+">
 
 🤝 资源连接
-
 
 </h3>
 
 
 
-<p>
+<p style="
+color:white;
+">
 
+帮助人们连接信息、
 
-帮助人们连接信息、组织和机会。
-
+组织和机会。
 
 </p>
 
@@ -1092,30 +1088,17 @@ margin:auto;
 
 </section>
 
-
-
-
-
-
-
-
-
 <!-- PHILOSOPHY -->
 
 
 <section>
 
 
-
-
 <h2 class="title">
-
 
 我们的理念
 
-
 </h2>
-
 
 
 
@@ -1124,24 +1107,33 @@ margin:auto;
 
 <p style="
 text-align:center;
-font-size:30px;
+font-size:28px;
 font-weight:bold;
+max-width:900px;
+margin:auto;
 ">
 
 
-一个问题。
+每一个问题 都值得被认真对待.
 
-<br>
 
-一个解决方案。
+<br><br>
 
-<br>
 
-一个谢谢。
+我们寻找解决方案
+
+连接人与资源.
+
+
+<br><br>
+
+
+让一次帮助
+
+最终成为一句真诚的谢谢你.
 
 
 </p>
-
 
 
 
@@ -1156,169 +1148,60 @@ font-weight:bold;
 
 
 
-<!-- JOIN -->
+<!-- CONTACT CTA -->
 
 
-<section>
+<section style="
+background:#F7F3EA;
+color:#111;
+text-align:center;
+padding:90px 10%;
+">
 
 
+<h2 style="
+font-size:40px;
+margin-bottom:20px;
+">
 
-<h2 class="title">
-
-
-加入谢谢你
-
+需要帮助？
 
 </h2>
 
 
 
+<p style="
+font-size:22px;
+margin-bottom:35px;
+">
 
+不知道下一步怎么办？
 
+<br>
 
-
-<div class="cards">
-
-
-
-
-
-<div class="card">
-
-
-<h3>
-
-
-志愿者
-
-
-</h3>
-
-
-
-<p>
-
-
-分享你的技能，帮助其他人解决问题。
-
+联系我们，
+一起找到方向。
 
 </p>
 
 
-
-</div>
-
-
-
-
-
-
-
-
-<div class="card">
-
-
-<h3>
-
-
-合作伙伴
-
-
-</h3>
-
-
-
-<p>
-
-
-连接你的资源，帮助需要帮助的人。
-
-
-</p>
-
-
-
-</div>
-
-
-
-
-
-
-
-
-<div class="card">
-
-
-<h3>
-
-
-支持
-
-
-</h3>
-
-
-
-<p>
-
-
-一起建立全球解决方案网络。
-
-
-</p>
-
-
-
-</div>
-
-
-
-
-
-</div>
-
-
-
-</section>
-
-
-
-
-
-<!-- CONTACT -->
-
-
-<section class="contact">
-
-
-<h2 class="title">
-
-Need Help?
-
-</h2>
-
-
-
-<p>
-
-When you don't know where to start,
-start with XIEXIE.
-
-</p>
-
-
-
-<a class="btn" href="mailto:xiexieinc@outlook.com">
-
-Contact XIEXIE
+<a href="mailto:xiexieinc@outlook.com"
+style="
+display:inline-block;
+background:#6D28D9;
+color:white;
+padding:15px 40px;
+border-radius:40px;
+text-decoration:none;
+font-weight:bold;
+">
+
+联系谢谢你.com
 
 </a>
 
 
 </section>
-
-
 
 
 
@@ -1327,98 +1210,185 @@ Contact XIEXIE
 <!-- FOOTER -->
 
 
-<footer>
+<footer style="
+background:#111;
+color:white;
+text-align:center;
+padding:70px 20px;
+">
 
 
-<h3>
+
+
+
+<h3 style="
+font-size:32px;
+letter-spacing:3px;
+margin-bottom:20px;
+">
+
 XIEXIE Inc.
+
 </h3>
 
 
-<p>
+
+
+
+<p style="
+font-size:18px;
+margin-bottom:10px;
+">
 
 创始人：王晟哲
 
 </p>
 
 
-<p>
-
-✉ xiexieinc@outlook.com
-
-</p>
 
 
 
 
-<div class="social-links">
-
-
-<h4>
-关注谢谢你
-</h4>
 
 
 
-<a href="https://www.linkedin.com/company/xiexie/" target="_blank">
-
-LinkedIn
-
-</a>
-
-
-
-<a href="https://github.com/XIEXIEInc" target="_blank">
-
-GitHub
-
-</a>
-
-
-
-<a href="https://www.youtube.com/@XIEXIEInc" target="_blank">
-
-YouTube
-
-</a>
-
-
-
-<a href="https://www.facebook.com/xiexieinc" target="_blank">
-
-Facebook
-
-</a>
-
-
-
-<a href="https://instagram.com/xiexie.inc" target="_blank">
-
-Instagram
-
-</a>
-
-
-
-</div>
-
-
-
-<br>
-
-
-
-<p>
+<p style="
+font-size:14px;
+opacity:0.7;
+margin-top:45px;
+">
 
 © 2026 XIEXIE Inc. All Rights Reserved.
 
 </p>
 
 
+
+
+
 </footer>
+
+
 
 
 
 </body>
 
+
 </html>
+
+<!-- CONTACT CTA -->
+
+
+<section style="
+background:#F7F3EA;
+color:#111;
+text-align:center;
+padding:90px 10%;
+">
+
+
+<h2 style="
+font-size:40px;
+margin-bottom:20px;
+">
+
+需要帮助？
+
+</h2>
+
+
+
+<p style="
+font-size:22px;
+margin-bottom:35px;
+">
+
+无论是一个问题，
+还是一个不知道从哪里开始的想法。
+
+</p>
+
+
+<a href="mailto:xiexieinc@outlook.com"
+style="
+display:inline-block;
+background:#6D28D9;
+color:white;
+padding:15px 40px;
+border-radius:40px;
+text-decoration:none;
+font-weight:bold;
+">
+
+联系谢谢你.com
+
+</a>
+
+
+</section>
+
+
+
+
+
+<!-- FOOTER -->
+
+
+<footer style="
+background:#111;
+color:white;
+text-align:center;
+padding:70px 20px;
+">
+
+
+
+
+
+<h3 style="
+font-size:32px;
+letter-spacing:3px;
+margin-bottom:20px;
+">
+
+XIEXIE Inc.
+
+</h3>
+
+
+
+
+
+<p style="
+font-size:18px;
+margin-bottom:10px;
+">
+
+创始人：王晟哲
+
+</p>
+
+
+
+
+
+
+
+
+
+<p style="
+font-size:14px;
+opacity:0.7;
+margin-top:45px;
+">
+
+© 2026 XIEXIE Inc. All Rights Reserved.
+
+</p>
+
+
+
+
+
+</footer>
