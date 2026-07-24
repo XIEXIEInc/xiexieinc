@@ -31,6 +31,14 @@ Social Innovation
 <style>
 
 
+*{
+
+box-sizing:border-box;
+
+}
+
+
+
 body{
 
 font-family:
@@ -40,34 +48,44 @@ sans-serif;
 
 margin:0;
 
+padding:0;
+
 color:#222;
 
 line-height:1.8;
 
 background:#ffffff;
 
+overflow-x:hidden;
+
 }
+
+
 
 
 
 .hero{
 
-height:600px;
+
+min-height:650px;
 
 
 background:
 
 linear-gradient(
-rgba(0,0,0,.55),
-rgba(0,0,0,.55)
+rgba(0,0,0,.45),
+rgba(0,0,0,.45)
 ),
 
 url("../images/shengzhe-wang-profile.jpg");
 
 
+
 background-size:cover;
 
-background-position:center;
+
+background-position:center top;
+
 
 
 display:flex;
@@ -77,9 +95,16 @@ align-items:center;
 justify-content:center;
 
 
+
 text-align:center;
 
 color:white;
+
+
+
+padding:100px 20px;
+
+
 
 }
 
@@ -87,9 +112,11 @@ color:white;
 
 .hero h1{
 
+
 font-size:60px;
 
-margin-bottom:20px;
+margin:0 0 20px;
+
 
 }
 
@@ -97,31 +124,45 @@ margin-bottom:20px;
 
 .hero p{
 
+
 font-size:24px;
 
+margin:10px 0;
+
+
 }
+
+
 
 
 
 .container{
 
+
+width:100%;
+
 max-width:1100px;
 
-margin:auto;
+margin:0 auto;
 
-padding:80px 25px;
+padding:70px 20px;
+
 
 }
 
 
 
+
+
 section{
 
-margin-bottom:80px;
 
-padding:40px;
+margin-bottom:70px;
+
+padding:35px 25px;
 
 border-radius:25px;
+
 
 }
 
@@ -135,7 +176,10 @@ background:#f7f7f7;
 
 
 
+
+
 h2{
+
 
 font-size:38px;
 
@@ -143,15 +187,21 @@ color:#111;
 
 margin-bottom:35px;
 
+
 }
+
 
 
 
 h3{
 
+
 color:#af4184;
 
+
 }
+
+
 
 
 
@@ -160,10 +210,215 @@ color:#af4184;
 
 display:grid;
 
-grid-template-columns:
-repeat(auto-fit,minmax(320px,1fr));
 
-gap:35px;
+grid-template-columns:
+repeat(auto-fit,minmax(300px,1fr));
+
+
+gap:30px;
+
+
+align-items:center;
+
+
+
+}
+
+
+
+
+.card{
+
+
+background:#ffffff;
+
+
+padding:30px;
+
+
+border-radius:20px;
+
+
+border-top:5px solid #af4184;
+
+
+box-shadow:
+
+0 5px 20px rgba(0,0,0,0.08);
+
+
+
+}
+
+
+
+
+img{
+
+
+width:100%;
+
+
+height:auto;
+
+
+display:block;
+
+
+border-radius:20px;
+
+
+
+}
+
+
+
+
+
+.quote{
+
+
+font-size:30px;
+
+
+text-align:center;
+
+
+font-style:italic;
+
+
+padding:45px 30px;
+
+
+background:#faf0f6;
+
+
+border-left:5px solid #af4184;
+
+
+border-radius:20px;
+
+
+
+}
+
+
+
+
+
+footer{
+
+
+background:#111;
+
+
+color:white;
+
+
+padding:40px;
+
+
+text-align:center;
+
+
+
+}
+
+
+
+
+
+
+@media(max-width:600px){
+
+
+
+.hero{
+
+
+min-height:500px;
+
+
+padding:80px 20px;
+
+
+
+}
+
+
+
+.hero h1{
+
+
+font-size:38px;
+
+
+}
+
+
+
+.hero p{
+
+
+font-size:18px;
+
+
+}
+
+
+
+.container{
+
+
+padding:40px 15px;
+
+
+}
+
+
+
+section{
+
+
+padding:25px 15px;
+
+
+margin-bottom:40px;
+
+
+
+}
+
+
+
+h2{
+
+
+font-size:30px;
+
+
+}
+
+
+
+h3{
+
+
+font-size:22px;
+
+
+}
+
+
+
+.grid{
+
+
+grid-template-columns:1fr;
+
+
+gap:25px;
+
 
 
 }
@@ -173,27 +428,9 @@ gap:35px;
 .card{
 
 
-background:#ffffff;
-
-padding:35px;
-
-border-radius:20px;
-
-border-top:5px solid #af4184;
-
-box-shadow:
-0 8px 25px rgba(0,0,0,0.08);
+padding:25px;
 
 
-}
-
-
-
-img{
-
-width:100%;
-
-border-radius:20px;
 
 }
 
@@ -202,38 +439,19 @@ border-radius:20px;
 .quote{
 
 
-font-size:30px;
+font-size:22px;
 
-text-align:center;
 
-font-style:italic;
+padding:30px 20px;
 
-padding:50px;
-
-background:#faf0f6;
-
-border-left:5px solid #af4184;
-
-border-radius:20px;
 
 
 }
 
 
 
-footer{
-
-
-background:#111;
-
-color:white;
-
-padding:40px;
-
-text-align:center;
-
-
 }
+
 
 
 
@@ -260,9 +478,11 @@ Shengzhe Wang
 </h1>
 
 
+
 <p>
 Founder of XIEXIE Inc.
 </p>
+
 
 
 <p>
@@ -270,10 +490,12 @@ International Business | Global Collaboration | Social Innovation
 </p>
 
 
+
 </div>
 
 
 </section>
+
 
 
 
@@ -295,20 +517,26 @@ About the Founder
 
 
 
+
+
 <div class="grid">
 
 
 
 <div>
 
+
 <img src="../images/shengzhe-wang-founder.jpg">
+
 
 </div>
 
 
 
 
+
 <div>
+
 
 
 
@@ -318,7 +546,9 @@ About the Founder
 Shengzhe Wang
 </strong>
 
+
 is the Founder of
+
 
 <strong style="color:#af4184;">
 XIEXIE Inc.
@@ -329,6 +559,8 @@ a company built around the belief that people should have easier access to infor
 
 
 </p>
+
+
 
 
 
@@ -350,6 +582,7 @@ and global innovation initiatives.
 
 
 
+
 <p>
 
 Through experiences across different countries and industries,
@@ -365,11 +598,13 @@ and opportunities.
 
 
 
+
+
 </div>
 
 
-
 </div>
+
 
 
 </section>
@@ -397,6 +632,7 @@ Why Shengzhe Created XIEXIE Inc.
 
 
 
+
 <div class="card">
 
 
@@ -413,6 +649,7 @@ Shengzhe Wang discovered a common challenge:
 
 
 </p>
+
 
 
 
@@ -435,6 +672,7 @@ or connections.
 
 
 
+
 <p>
 
 XIEXIE Inc. was created to become a bridge between people and possibilities.
@@ -444,7 +682,8 @@ XIEXIE Inc. was created to become a bridge between people and possibilities.
 
 
 
-<h3 style="color:#af4184;">
+
+<h3>
 
 "When You Don't Know Where to Start, Start with XIEXIE."
 
@@ -452,10 +691,12 @@ XIEXIE Inc. was created to become a bridge between people and possibilities.
 
 
 
+
 </div>
 
 
 </div>
+
 
 
 </section>
@@ -477,7 +718,10 @@ International Business Experience
 
 
 
+
+
 <div class="grid">
+
 
 
 <div>
@@ -491,12 +735,15 @@ International Business Experience
 
 
 
+
 <div class="card">
 
 
-<h3 style="color:#af4184;">
+
+<h3>
 Global Business & Cross-Cultural Collaboration
 </h3>
+
 
 
 
@@ -515,6 +762,7 @@ and business communities.
 
 
 
+
 <p>
 
 His experience includes:
@@ -524,7 +772,9 @@ His experience includes:
 
 
 
+
 <ul>
+
 
 
 <li>
@@ -532,9 +782,11 @@ International communication and coordination
 </li>
 
 
+
 <li>
 Business development and partnership support
 </li>
+
 
 
 <li>
@@ -542,9 +794,11 @@ Marketing strategy and brand development
 </li>
 
 
+
 <li>
 Cross-cultural negotiation and collaboration
 </li>
+
 
 
 <li>
@@ -552,14 +806,17 @@ Connecting ideas, resources, and opportunities across markets
 </li>
 
 
+
 </ul>
 
 
 
+
 </div>
 
 
 </div>
+
 
 
 
@@ -582,6 +839,8 @@ Global Engagement
 
 
 
+
+
 <div class="grid">
 
 
@@ -590,9 +849,10 @@ Global Engagement
 
 
 
-<h3 style="color:#af4184;">
+<h3>
 International Organizations & Sustainable Development
 </h3>
+
 
 
 
@@ -606,7 +866,9 @@ Shengzhe Wang has participated in United Nations related initiatives and interna
 
 
 
+
 <ul>
+
 
 
 <li>
@@ -614,9 +876,11 @@ Sustainable development
 </li>
 
 
+
 <li>
 Green marketing and responsible business
 </li>
+
 
 
 <li>
@@ -624,9 +888,11 @@ International trade and cooperation
 </li>
 
 
+
 <li>
 Climate-related investment topics
 </li>
+
 
 
 <li>
@@ -634,7 +900,9 @@ Social responsibility and global challenges
 </li>
 
 
+
 </ul>
+
 
 
 
@@ -652,7 +920,10 @@ and social impact.
 
 
 
+
 </div>
+
+
 
 
 
@@ -667,11 +938,21 @@ and social impact.
 
 
 
+
 </div>
 
 
 
+
 </section>
+
+
+
+
+
+
+
+
 
 <section>
 
@@ -682,7 +963,10 @@ Education & Global Perspective
 
 
 
+
+
 <div class="grid">
+
 
 
 <div>
@@ -692,6 +976,7 @@ Education & Global Perspective
 
 
 </div>
+
 
 
 
@@ -709,7 +994,10 @@ Shengzhe Wang has studied and participated in international education programs i
 
 
 
+
+
 <ul>
+
 
 
 <li>
@@ -717,9 +1005,11 @@ Mahidol University – Master of Marketing Management
 </li>
 
 
+
 <li>
 MIT Professional Education Programs
 </li>
+
 
 
 <li>
@@ -727,9 +1017,11 @@ MIT Sloan School of Management Programs
 </li>
 
 
+
 <li>
 Harvard Data Science Program
 </li>
+
 
 
 <li>
@@ -737,7 +1029,10 @@ University of Oxford Saïd Business School Programs
 </li>
 
 
+
 </ul>
+
+
 
 
 
@@ -756,22 +1051,17 @@ and global cooperation.
 
 
 
+
 </div>
 
 
+
 </div>
+
 
 
 
 </section>
-
-
-
-
-
-
-
-
 
 <section>
 
@@ -782,6 +1072,7 @@ Founder Vision
 
 
 
+
 <div class="quote">
 
 
@@ -789,6 +1080,7 @@ Founder Vision
 
 
 </div>
+
 
 
 
@@ -805,6 +1097,7 @@ and opportunities through meaningful connections.
 
 
 </p>
+
 
 
 
@@ -828,6 +1121,7 @@ Personal Philosophy
 
 
 
+
 <div class="card">
 
 
@@ -841,12 +1135,14 @@ Shengzhe believes meaningful change does not always begin with large actions.
 
 
 
+
 <p>
 
 Sometimes it begins with helping someone find the next step.
 
 
 </p>
+
 
 
 
@@ -865,7 +1161,9 @@ The ultimate purpose is creating positive human impact.
 
 
 
+
 </div>
+
 
 
 
@@ -889,21 +1187,29 @@ Contact
 
 
 
+
 <div class="card"
+
 style="
 background:#fafafa;
 ">
 
 
 
+
+
 <strong style="font-size:22px;">
+
 Shengzhe Wang
+
 </strong>
 
 
 
 
+
 <br>
+
 
 
 
@@ -916,7 +1222,10 @@ Founder, XIEXIE Inc.
 
 
 
+
+
 <br><br>
+
 
 
 
@@ -927,22 +1236,30 @@ Email:
 
 
 
+
+
 <a
+
 href="mailto:shengzhewang@outlook.com"
+
 style="
 color:#000;
 text-decoration:none;
 font-weight:bold;
 ">
 
+
 shengzhewang@outlook.com
+
 
 </a>
 
 
 
 
+
 <br><br>
+
 
 
 
@@ -953,22 +1270,32 @@ Website:
 
 
 
+
+
 <a
+
 href="https://xiexieinc.com"
+
 target="_blank"
+
 style="
 color:#000;
 text-decoration:none;
 font-weight:bold;
 ">
 
+
 xiexieinc.com
+
 
 </a>
 
 
 
+
+
 </div>
+
 
 
 
@@ -978,7 +1305,10 @@ xiexieinc.com
 
 
 
+
+
 </div>
+
 
 
 
@@ -1001,6 +1331,8 @@ Founder: Shengzhe Wang
 
 
 </footer>
+
+
 
 
 
