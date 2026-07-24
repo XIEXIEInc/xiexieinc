@@ -4,12 +4,9 @@
 
 <head>
 
-
 <meta charset="UTF-8">
 
-
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 
 
 <title>
@@ -19,7 +16,7 @@ Shengzhe Wang | Founder of XIEXIE Inc.
 
 
 <meta name="description" content="
-Shengzhe Wang is the Founder of XIEXIE Inc., an entrepreneur and international business professional focused on global collaboration, social innovation, and connecting people with information, resources, and opportunities.
+Shengzhe Wang is the Founder of XIEXIE Inc., an international business professional focused on global collaboration, social innovation, sustainable development, and connecting people with information, resources, and opportunities.
 ">
 
 
@@ -37,9 +34,67 @@ Cross-Cultural Communication
 
 
 
+<meta name="author" content="Shengzhe Wang, Founder of XIEXIE Inc.">
+
+
+
 <link rel="canonical" href="https://xiexieinc.com/founder">
 
 
+
+<!-- Favicon -->
+
+<link rel="icon" type="image/png" sizes="32x32"
+href="https://xiexieinc.com/logo.png">
+
+<link rel="icon" type="image/png" sizes="192x192"
+href="https://xiexieinc.com/logo.png">
+
+<link rel="apple-touch-icon"
+href="https://xiexieinc.com/logo.png">
+
+
+
+
+
+<!-- Open Graph -->
+
+<meta property="og:site_name"
+content="XIEXIE Inc.">
+
+
+<meta property="og:title"
+content="Shengzhe Wang | Founder of XIEXIE Inc.">
+
+
+<meta property="og:description"
+content="Shengzhe Wang is the Founder of XIEXIE Inc., focused on global collaboration, social innovation, and connecting people with opportunities.">
+
+
+<meta property="og:type"
+content="profile">
+
+
+<meta property="og:url"
+content="https://xiexieinc.com/founder">
+
+
+<meta property="og:image"
+content="https://xiexieinc.com/images/shengzhe-wang-profile.jpg">
+
+
+<meta property="og:image:width"
+content="1200">
+
+
+<meta property="og:image:height"
+content="630">
+
+
+
+
+
+<!-- Person Schema -->
 
 <script type="application/ld+json">
 
@@ -55,17 +110,33 @@ Cross-Cultural Communication
 
 "url":"https://xiexieinc.com/founder",
 
-"worksFor":{
+
+"image":
+
+"https://xiexieinc.com/images/shengzhe-wang-profile.jpg",
+
+
+
+"worksFor":
+
+{
 
 "@type":"Organization",
 
 "name":"XIEXIE Inc.",
 
-"url":"https://xiexieinc.com"
+"url":"https://xiexieinc.com",
+
+"logo":
+
+"https://xiexieinc.com/logo.png"
 
 },
 
-"sameAs":[
+
+"sameAs":
+
+[
 
 "https://linkedin.com/in/wangshengzhe"
 
@@ -77,6 +148,9 @@ Cross-Cultural Communication
 
 
 
+
+
+<!-- Organization Schema -->
 
 <script type="application/ld+json">
 
@@ -90,17 +164,33 @@ Cross-Cultural Communication
 
 "url":"https://xiexieinc.com",
 
-"founder":{
+
+"logo":
+
+"https://xiexieinc.com/logo.png",
+
+
+
+"founder":
+
+{
 
 "@type":"Person",
 
-"name":"Shengzhe Wang"
+"name":"Shengzhe Wang",
+
+"url":
+
+"https://xiexieinc.com/founder"
 
 }
 
 }
 
 </script>
+
+
+
 
 
 
@@ -138,6 +228,95 @@ background:#ffffff;
 
 
 
+
+/* =====================
+NAVIGATION
+===================== */
+
+
+nav{
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+padding:20px 8%;
+
+background:white;
+
+position:sticky;
+
+top:0;
+
+z-index:100;
+
+box-shadow:
+
+0 2px 15px rgba(0,0,0,0.08);
+
+}
+
+
+
+.logo{
+
+display:flex;
+
+align-items:center;
+
+gap:12px;
+
+font-size:30px;
+
+font-weight:bold;
+
+letter-spacing:3px;
+
+}
+
+
+
+.logo img{
+
+width:45px;
+
+height:45px;
+
+object-fit:contain;
+
+}
+
+
+
+.nav-link{
+
+font-weight:bold;
+
+color:#000;
+
+}
+
+
+
+.nav-link:hover{
+
+color:#af4184;
+
+}
+
+
+
+
+
+
+
+/* =====================
+HERO
+===================== */
+
+
 .hero{
 
 
@@ -164,22 +343,6 @@ background-size:cover;
 
 
 
-/*
-调整人物位置：
-
-数字越大，图片越往上移动
-
-数字越小，人物越往下
-
-例如：
-
-center 30%
-center 45%
-center 55%
-
-*/
-
-
 background-position:center 45%;
 
 
@@ -195,10 +358,6 @@ justify-content:flex-start;
 
 
 
-text-align:left;
-
-
-
 color:white;
 
 
@@ -207,7 +366,6 @@ padding-left:8%;
 
 
 padding-bottom:60px;
-
 
 
 }
@@ -252,6 +410,9 @@ margin:8px 0;
 
 
 
+
+
+
 .container{
 
 
@@ -286,7 +447,6 @@ border-radius:25px;
 
 
 
-
 section:nth-child(even){
 
 
@@ -294,7 +454,6 @@ background:#f7f7f7;
 
 
 }
-
 
 
 
@@ -324,7 +483,6 @@ color:#af4184;
 
 
 }
-
 
 
 
@@ -379,7 +537,6 @@ box-shadow:
 
 
 
-
 img{
 
 
@@ -393,7 +550,6 @@ border-radius:20px;
 
 
 }
-
 
 
 
@@ -427,7 +583,6 @@ border-radius:20px;
 
 
 
-
 a{
 
 
@@ -438,7 +593,6 @@ text-decoration:none;
 
 
 }
-
 
 
 
@@ -464,7 +618,25 @@ text-align:center;
 
 
 
+
 @media(max-width:768px){
+
+
+.logo{
+
+font-size:22px;
+
+}
+
+
+
+.logo img{
+
+width:38px;
+
+height:38px;
+
+}
 
 
 
@@ -487,6 +659,7 @@ padding-bottom:40px;
 
 
 }
+
 
 
 
@@ -520,6 +693,7 @@ padding:40px 15px;
 
 
 
+
 section{
 
 
@@ -527,6 +701,7 @@ padding:25px;
 
 
 }
+
 
 
 
@@ -556,6 +731,7 @@ padding:35px;
 }
 
 
+
 </style>
 
 
@@ -566,6 +742,55 @@ padding:35px;
 
 <body>
 
+
+<!-- =====================
+NAVIGATION
+===================== -->
+
+
+<nav>
+
+
+<div class="logo">
+
+
+<img
+
+src="https://xiexieinc.com/logo.png"
+
+alt="XIEXIE Inc. Logo">
+
+
+XIÈXIE
+
+
+</div>
+
+
+
+<a
+
+class="nav-link"
+
+href="https://xiexieinc.com"
+
+target="_blank">
+
+XIEXIE Inc.
+
+</a>
+
+
+</nav>
+
+
+
+
+
+
+<!-- =====================
+HERO
+===================== -->
 
 
 <section class="hero">
@@ -604,12 +829,6 @@ International Business | Global Collaboration | Social Innovation
 </section>
 
 
-
-
-
-
-
-
 <div class="container">
 
 
@@ -617,7 +836,6 @@ International Business | Global Collaboration | Social Innovation
 
 
 <section>
-
 
 
 <h2>
@@ -630,9 +848,7 @@ Founder Profile
 
 <p>
 
-
 Shengzhe Wang is an international business professional and the Founder of XIEXIE Inc., a global company focused on connecting people with information, resources, and opportunities through international collaboration.
-
 
 </p>
 
@@ -640,13 +856,9 @@ Shengzhe Wang is an international business professional and the Founder of XIEXI
 
 <p>
 
-
 His interests include international business, social innovation, sustainable development, and cross-cultural cooperation.
 
-
 </p>
-
-
 
 
 
@@ -661,7 +873,6 @@ His interests include international business, social innovation, sustainable dev
 
 
 <section>
-
 
 
 <h2>
@@ -772,9 +983,7 @@ alt="Shengzhe Wang Founder of XIEXIE Inc."
 
 <p>
 
-
 Through his professional journey across international environments, Shengzhe Wang has developed experience in global business, cross-cultural communication, marketing strategy, sustainable development, and international innovation initiatives.
-
 
 </p>
 
@@ -782,9 +991,7 @@ Through his professional journey across international environments, Shengzhe Wan
 
 <p>
 
-
 His experiences across different countries and industries shaped his understanding of how people, organizations, and ideas can connect to create meaningful opportunities.
-
 
 </p>
 
@@ -800,11 +1007,21 @@ His experiences across different countries and industries shaped his understandi
 
 </section>
 
+
+
+
+
+
+
+
+
 <section>
 
 
 <h2>
+
 Why Shengzhe Created XIEXIE Inc.
+
 </h2>
 
 
@@ -835,29 +1052,23 @@ alt="XIEXIE Inc. Founder Story Shengzhe Wang"
 
 <p>
 
-
 During his journey working with international companies, universities, and global communities, Shengzhe Wang discovered a common challenge:
-
 
 </p>
 
 
 
 <p>
-
 
 Many people have questions, ideas, and goals, but they often do not know where to find the right resources, guidance, or connections.
 
-
 </p>
 
 
 
 <p>
 
-
 XIEXIE Inc. was founded with a vision to improve access to information, resources, and meaningful opportunities through global collaboration.
-
 
 </p>
 
@@ -865,9 +1076,7 @@ XIEXIE Inc. was founded with a vision to improve access to information, resource
 
 <h3>
 
-
 "When You Don't Know Where to Start, Start with XIEXIE."
-
 
 </h3>
 
@@ -893,7 +1102,9 @@ XIEXIE Inc. was founded with a vision to improve access to information, resource
 
 
 <h2>
+
 Global Business Experience
+
 </h2>
 
 
@@ -931,9 +1142,7 @@ Global Business & Cross-Cultural Collaboration
 
 <p>
 
-
 Shengzhe Wang has experience in international business operations, supporting communication between different cultures, organizations, and business communities.
-
 
 </p>
 
@@ -941,9 +1150,7 @@ Shengzhe Wang has experience in international business operations, supporting co
 
 <p>
 
-
 His experience includes:
-
 
 </p>
 
@@ -1027,9 +1234,7 @@ International Organizations & Sustainable Development
 
 <p>
 
-
 Shengzhe Wang has participated in United Nations related initiatives and international discussions focusing on:
-
 
 </p>
 
@@ -1071,9 +1276,7 @@ Social responsibility and global challenges
 
 <p>
 
-
 These experiences strengthened his understanding of how organizations can balance economic growth, environmental responsibility, and social impact.
-
 
 </p>
 
@@ -1151,9 +1354,7 @@ alt="Shengzhe Wang Global Education Background"
 
 <p>
 
-
 Shengzhe Wang has received academic and professional education through international programs, including:
-
 
 </p>
 
@@ -1195,7 +1396,6 @@ University of Oxford Saïd Business School Programs
 
 These experiences shaped his perspective on business, technology, leadership, and global cooperation.
 
-
 </p>
 
 
@@ -1234,11 +1434,9 @@ Founder Vision
 
 <p>
 
-
 XIEXIE Inc. represents a long-term vision:
 
 creating a platform where people can discover answers, resources, and opportunities through global connections.
-
 
 </p>
 
@@ -1272,31 +1470,25 @@ Personal Philosophy
 
 <p>
 
-
 Shengzhe Wang believes meaningful change does not always begin with large actions.
-
 
 </p>
 
 
 
 <p>
-
 
 Sometimes it begins with helping someone find the next step.
 
-
 </p>
 
 
 
 <p>
-
 
 Business, technology, and innovation are tools.
 
 The ultimate purpose is to create meaningful human impact.
-
 
 </p>
 
@@ -1329,6 +1521,7 @@ Get in Touch
 
 
 <div class="card"
+
 style="
 background:#fafafa;
 ">
@@ -1358,6 +1551,7 @@ Founder, XIEXIE Inc.
 
 
 <br><br>
+
 
 
 
@@ -1394,6 +1588,7 @@ xiexieinc.com
 
 
 
+
 LinkedIn:
 
 <br>
@@ -1422,6 +1617,7 @@ linkedin.com/in/wangshengzhe
 
 
 <br><br>
+
 
 
 
@@ -1469,20 +1665,73 @@ shengzhewang@outlook.com
 
 
 
+
+<!-- =====================
+FOOTER
+===================== -->
+
+
 <footer>
+
+
+<img
+
+src="https://xiexieinc.com/logo.png"
+
+alt="XIEXIE Inc Logo"
+
+style="
+width:60px;
+margin-bottom:20px;
+">
+
+
+
+
+
+<h3>
+
+XIEXIE Inc.
+
+</h3>
+
+
+
+
+
+<p>
+
+Founder: Shengzhe Wang
+
+</p>
+
+
+
+
+<p>
+
+International Business | Global Collaboration | Social Innovation
+
+</p>
+
+
+
+
+
+<p style="margin-top:20px;font-size:14px;opacity:0.7;">
 
 
 © 2026 XIEXIE Inc. All Rights Reserved.
 
 
-<br>
+</p>
 
-
-Founder: Shengzhe Wang
 
 
 
 </footer>
+
+
 
 
 
